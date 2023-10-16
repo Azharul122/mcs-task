@@ -1,12 +1,17 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { FaTimes } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
+import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="header bg-white py-2">
-        <div className="container w-[96%] md:w-[90%] mx-auto">
+      <div className="header bg-white py-2 w-full">
+        <div className="w-[96%] md:w-[90%] mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex gap-5 items-center">
               <svg
+                className="siteLogo"
                 width="138"
                 height="45"
                 viewBox="0 0 138 45"
@@ -65,9 +70,15 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-                <button className="rounded py-[5px] px-[20px] bg-transparent border border-[#0076CE] text-[#0076CE]">Login</button>
-                <button className="rounded py-[5px] px-[20px] bg-[#0076CE] border border-[#0076CE] text-white">Register</button>
+            <div className="flex items-center gap-2 ">
+              <button className="rounded py-[3px] md:py-[5px] px-[10px] md:px-[20px] bg-transparent border border-[#0076CE] text-[#0076CE] text-sm md:text-lg">
+                Login
+              </button>
+              <button className="rounded py-[3px] md:py-[5px] px-[10px] md:px-[20px] bg-[#0076CE] border border-[#0076CE] text-white text-sm md:text-lg">
+                Register
+              </button>
+              <GiHamburgerMenu className="block md:hidden mobileMenueOpenIcon text-2xl cursor-pointer text-black " />
+              <FaTimes className="mobileMenueCloseIcon text-2xl cursor-pointer text-black hidden" />
             </div>
           </div>
         </div>

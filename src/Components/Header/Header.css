@@ -1,0 +1,15 @@
+.desktop-navbar{
+
+}
+@media screen and (max-width:770px)
+{
+    .desktop-navbar{
+        display: none;
+    }
+    .siteLogo{
+        width: 90px;
+    }
+    .mobileMenueOpenIcon{
+        
+    }
+}
